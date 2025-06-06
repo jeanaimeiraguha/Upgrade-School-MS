@@ -33,14 +33,13 @@ $username = $_SESSION['username'];  // get username from session
       background-position: center;
       background-repeat: no-repeat;
       min-height: 100vh;
-      /* Overlay with dark shade */
       position: relative;
     }
     body::before {
       content: "";
       position: fixed;
       inset: 0;
-      background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+      background-color: rgba(0, 0, 0, 0.6);
       z-index: -1;
     }
   </style>
@@ -76,6 +75,10 @@ $username = $_SESSION['username'];  // get username from session
               <i class="fas fa-user-cog"></i>
               <span>Users</span>
             </a>
+            <a href="report.php" class="flex items-center space-x-1 text-gray-900 hover:text-blue-600 font-medium">
+              <i class="fas fa-file-alt"></i>
+              <span>Report</span>
+            </a>
           </div>
         </div>
 
@@ -105,32 +108,30 @@ $username = $_SESSION['username'];  // get username from session
     <!-- Mobile menu -->
     <div id="mobile-menu" class="sm:hidden hidden bg-white bg-opacity-90">
       <div class="pt-2 pb-3 space-y-1 px-4">
-        <a href="marks/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
+        <a href="index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
           <i class="fas fa-marker"></i>
           <span>Marks</span>
         </a>
-        <a href="modules/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
+        <a href="../modules/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
           <i class="fas fa-book"></i>
           <span>Modules</span>
         </a>
-        <a href="../modules/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
+        <a href="../trade/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
           <i class="fas fa-briefcase"></i>
           <span>Trade</span>
         </a>
-        <a href="../trade/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
+        <a href="../trainees/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
           <i class="fas fa-users"></i>
           <span>Trainees</span>
         </a>
-        
-        <a href="../trainees/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
+        <a href="../users/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
           <i class="fas fa-user-cog"></i>
           <span>Users</span>
         </a>
-         <a href="report.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
-          <i class="fas fa-user-cog"></i>
+        <a href="report.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
+          <i class="fas fa-file-alt"></i>
           <span>Report</span>
         </a>
-        <!-- <a href="report.php">Report</a> -->
         <form action="logout.php" method="post" class="mt-3">
           <button type="submit" class="w-full bg-red-600 hover:bg-red-700 px-3 py-2 rounded text-white font-semibold">
             Logout
