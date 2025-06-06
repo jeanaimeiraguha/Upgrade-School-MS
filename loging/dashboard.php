@@ -71,7 +71,7 @@ $username = $_SESSION['username'];  // get username from session
               <i class="fas fa-users"></i>
               <span>Trainees</span>
             </a>
-            <a href="../users/index.php" class="flex items-center space-x-1 text-gray-900 hover:text-blue-600 font-medium">
+            <a href="select_user.php" class="flex items-center space-x-1 text-gray-900 hover:text-blue-600 font-medium">
               <i class="fas fa-user-cog"></i>
               <span>Users</span>
             </a>
@@ -124,7 +124,7 @@ $username = $_SESSION['username'];  // get username from session
           <i class="fas fa-users"></i>
           <span>Trainees</span>
         </a>
-        <a href="../users/index.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
+        <a href="select_user.php" class="flex items-center space-x-2 text-gray-700 hover:bg-blue-100 rounded px-3 py-2 font-medium">
           <i class="fas fa-user-cog"></i>
           <span>Users</span>
         </a>
